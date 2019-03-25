@@ -1,0 +1,32 @@
+.button1 {
+    background-color: lightsalmon;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+  }   
+  .dem{
+      border:solid;
+      width: 200px;
+      height: 150px;
+  }
+  .button11 {
+    background-color: lightsalmon;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+  }   
+      

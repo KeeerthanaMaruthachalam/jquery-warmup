@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <!--  <script src="index.css"></script>-->
+      <link rel="stylesheet" href="index.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+       <script>
+     				$(document).ready(function(){
+					$(".button1").bind(
+                        'click', function(){
+							$(this).css("background-color", "red")
+                            .slideUp(2000)
+                            .slideDown(2000);
+                            $(".button2").css("background-color","");
+					});
+                    $(".button2").bind(
+                        'click', function(){
+                            $(".button1").css("background-color","");
+                            $(this).css("background-color", "blue")
+                            .slideUp(2000)
+                            .slideDown(2000);
+                    });
+                    $(".demo").on("click", "button", function(event){
+                         $(event.delegateTarget).css("background-color", "grey");
+                    });			    
+                    });
+
+        </script>
+    </head>
+    <body>
+        <h3 align="center">Jquery Button Events</h3>
+        <div class="flex-container" align="center">
+            <div class="demo" >
+                Click on/off button for an event<br><br>
+                <button class="button1">ON</button>
+                <button class="button2">OFF</button>
+            </div>
+            <div>
+                    Click on/off button for an event in second div<br><br>
+                    <button class="button1">ON</button>
+                    <button class="button2">OFF</button>
+            </div>
+            <div>
+                    Click on/off button for an event in third div<br><br>
+                    <button class="button1">ON</button>
+                    <button class="button2">OFF</button>
+            </div>
+            <div class="demo">
+                    Click on/off button for an event in fourth div<br><br>
+                    <button class="button1">ON</button>
+                    <button class="button2">OFF</button>
+            </div>
+        </div>
+    </body>
+</html>

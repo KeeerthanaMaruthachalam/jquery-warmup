@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel=stylesheet href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+    $('.button1').click(function(){
+        var addbutton="<div class='dem'> <button class='button11'> AddMore</button><br><button class='button1'> Delete</button></div>";
+      //  var deletebutton="<div class='dem'><button class='button1'> Delete</button></div>";
+      $(".demo").append(addbutton);
+
+    });
+});
+$(document).ready(function(){
+    $('.button11').click(function(){
+        $("addbutton").parent.empty();
+    });
+});
+</script>
+</head>
+<body>
+    <div class="demo">
+        <button class="button1" >Add Button</button>
+    </div>
+</body>
+</html>
